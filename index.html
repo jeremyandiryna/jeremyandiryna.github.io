@@ -2,12 +2,28 @@
 <html ng-app>
 <head>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.2/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+  <script type="text/javascript" src="/todo.js"></script>
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  
+  
 </head>
 <body>
-<h2>Jeremy & Iryna Iglehart</h2>
-<p>Sitting in a tree</p>
-<p>{{verse2}}</p>
-<hr>
-<input type="text" ng-model="verse2"
+  <h2>Jeremy & Iryna Iglehart</h2>
+  
+  <p>Sitting in a tree</p>
+  <p>{{verse2}}</p>
+  
+  <hr>
+  
+  <input type="text" ng-model="verse2"
+  
+  <hr>
+  
+  <div ng-controller="TodoCtrl">
+    {{totalTodos}}
+  </div>
+  
 </body>
 </html>
